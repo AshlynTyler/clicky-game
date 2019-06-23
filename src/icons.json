@@ -1,0 +1,74 @@
+[
+    {
+        "id":"1",
+        "name":"Steven",
+        "src":"./images/steven.png"
+    },
+
+    {
+        "id":"2",
+        "name":"Garnet",
+        "src":"./images/garnet.png"
+    },
+
+    {
+        "id":"3",
+        "name":"Amethyst",
+        "src": "./images/amethyst.png"
+    },
+
+    {
+        "id":"4",
+        "name":"Pearl",
+        "src":"./images/pearl.png"
+    },
+
+    {
+        "id":"5",
+        "name":"Greg",
+        "src":"./images/greg.png"
+    },
+
+    {
+        "id":"6",
+        "name":"Connie",
+        "src":"./images/connie.png"
+    },
+
+    {
+        "id":"7",
+        "name":"Lapis Lazuli",
+        "src":"./images/lapis.png"
+    },
+
+    {
+        "id":"8",
+        "name":"Peridot",
+        "src":"./images/peridot.png"
+    },
+
+    {
+        "id":"9",
+        "name":"Bismuth",
+        "src":"./images/bismuth.png"
+    },
+
+    {
+        "id":"10",
+        "name":"Stevonnie",
+        "src":"./images/stevonnie.png"
+    },
+
+    {
+        "id":"11",
+        "name":"Lars", 
+        "src":"./images/lars.png"
+    },
+
+    {
+        "id":"12",
+        "name":"Sadie",
+        "src":"./images/sadie.png"
+    }
+
+]
