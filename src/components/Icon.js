@@ -1,13 +1,16 @@
 import React from 'react';
 
 
+class Icon extends React.Component{
 
-function Icon(props){
+        
+
     
-
-    return(
-        <img src = {props.src} width = "200px" height = "200px" alt = {props.name}/>
-    )
+    render(){
+        return(
+            <img src = {this.props.src} width = "200px" className="icon" height = "200px" alt = {this.props.name} onClick={this.props.onClick}/>
+        )
+    }
 }
 
 export default Icon

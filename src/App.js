@@ -30,9 +30,32 @@ class App extends React.Component {
     return array;
   }
 
-  onClick = (id) =>{
+  onClick = (event) =>{
+    const chosen = event.target.alt
 
+    if(this.state.picked.indexOf(chosen) === -1){
+
+      this.state.picked.push(chosen)
+      console.log(this.state.picked)
+
+      this.state.score++
+
+      if(this.state.score > this.state.highscore){
+        this.setState({highscore: this.state.score})
+      }
+
+      
+    }
+    else{
+      this.setState({picked: []});
+
+      this.setState({score: 0})
+    }
+
+    this.setState({icons: this.shuffle(icons)})
   }
+
+
 
   render(){
     return (
@@ -44,13 +67,13 @@ class App extends React.Component {
           <p>Highscore: {this.state.highscore}</p>
         </div>
         
-        <div>
+        <div className="flex-container" id = "icon-flex">
           {icons.map( icon => (
 
-            <Icon src={icon.src} id={icon.id} name={icon.name} onClick={this.onClick(icon)}/>
+            <Icon src={icon.src} id={icon.id} key={icon.id} name={icon.name} icon={icon} onClick={this.onClick}/>
           )
            
-          )}}
+          )}
         </div>
       </div>
     )
